@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>KALKULATOR</h1>
+    <div class="calculator">
+      <input type="text" class="calculator-screen"  id="viewer" disabled />
+      <div class="calculator-keys">
+        
+        <div class="row">
+            <input type="button" value="AC" class="btn all-clear" onclick="clean()" />
+        
+           <input type="button" value="%" class="btn" onclick="persentase()" />
+           <input type="button" value="/" class="btn" onclick="view('/')" />
+        </div>
+
+        <div class="row">
+      <input type="button" value="7" class="btn" onclick="view(7)" />
+       <input type="button" value="8" class="btn" onclick="view(8)" />
+        <input type="button" value="9" class="btn" onclick="view(9)" />
+         <input type="button" value="&times;" class="btn" onclick="view('*')" />
+    
+        </div>
+
+        <div class="row">
+          <input type="button" value="4" class="btn" onclick="view(4)" />
+            <input type="button" value="5" class="btn" onclick="view(5)" />
+           <input type="button" value="6" class="btn" onclick="view(6)" />
+           <input type="button" value="-" class="btn" onclick="view('-')" />
+        </div>
+
+        <div class="row"></div>
+
+        <div class="row">
+      <input type="button" value="1" class="btn" onclick="view(1)" />
+          <input type="button" value="2" class="btn" onclick="view(2)" />
+      <input type="button" value="3" class="btn" onclick="view(3)" />
+               <input type="button" value="+" class="btn" onclick="view('+')" />
+        </div>
+
+        <div class="row">
+         <input type="button" value="0" class="btn zero-btn" onclick="view('0')" />
+       <input type="button" value="." class="btn" onclick="view('.')" />
+         <input
+                type="button"
+                value="="
+                class="btn"
+                onclick="equal()"
+           
+              />
+        </div>
+
+        <div class="row">
+         <input type="button" value="Sin" class="btn sin" onclick="sin()" />
+    <input type="button" value="Cos" class="btn" onclick="cos()" />
+ <input type="button" value="Tan" class="btn" onclick="tan()" />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+ &copy; CopyRight 2021 || Progate Sani Hamdhani. All Reserved</td>
+
+    </div>
+   
+    <script src="./script.js"></script>
+  </body>
+</html>
